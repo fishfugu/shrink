@@ -1,0 +1,23 @@
+# Normalise all text files to LF in repo
+* text=auto eol=lf
+
+# CSVs in examples/ are always treated as text (LF line endings, UTF-8)
+examples/**/*.csv text eol=lf working-tree-encoding=UTF-8
+
+# Treat Go files as text with LF endings
+*.go text eol=lf
+
+# Markdown, TeX, etc. as LF
+*.md text eol=lf
+*.tex text eol=lf
+
+# Binary files - no diff
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.pdf binary
+*.svg binary
+
+# Lock README.md to prevent merge conflicts on main
+README.md merge=union
