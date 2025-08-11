@@ -216,5 +216,3 @@ See [LICENSE](./LICENSE).
 
 * Long-form background and derivations: [docs/](./docs)
 * Older experiments: [archive/](./archive)
-
-```
