@@ -24,15 +24,15 @@ Build & run:
 
 Empirical (CSV of nD points, each row is x1,...,xn):
 
-  go run main.go -mode=empirical -csv=data_nd.csv -csv-out=out_scaled.csv -autoscale
+  go run cmd/shrink-nd/main.go -mode=empirical -csv=examples/nd/data_3d.csv -csv-out=examples/nd/out_scaled.csv -autoscale
 
 Flags explained below in main().
 
-go run main.go \
-  -gen=data_3d.csv -gen-n=3 -gen-rows=200 -gen-sigma=0.25 -gen-seed=42 \
+go run cmd/shrink-nd/main.go \
+  -gen=examples/nd/data_3d.csv -gen-n=3 -gen-rows=200 -gen-sigma=0.25 -gen-seed=42 \
   -gen-mean=0.3,0.1,-0.2
 
-go run main.go -mode=empirical -csv=data_3d.csv -csv-out=scaled_3d.csv -autoscale
+go run cmd/shrink-nd/main.go -mode=empirical -csv=examples/nd/data_3d.csv -csv-out=examples/nd/scaled_3d.csv -autoscale
 
 */
 
