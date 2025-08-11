@@ -39,15 +39,14 @@ Thumbs.db
 # Logs
 *.log
 
-# Data & intermediate results (keep examples/ if desired)
+# Generated CSVs (ignore everywhere except examples/)
 *.csv
-*.tsv
+!examples/**/*.csv
+
+# Temporary / scratch files
 *.tmp
 
 # Ignore generated figures
 *.png
 *.svg
 *.pdf
-
-# Allow example CSVs in examples/ dir
-!examples/**/*.csv
