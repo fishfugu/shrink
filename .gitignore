@@ -1,0 +1,53 @@
+# Binaries for programs and plugins
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Build output
+*.test
+*.out
+
+# Go build cache & compiled binaries
+*.a
+*.o
+*.obj
+*.pyc
+*.pyo
+*.pyd
+*.pdb
+*.mod
+*.sum
+bin/
+build/
+dist/
+
+# Go workspace files
+go.work
+go.work.sum
+
+# IDE/editor junk
+.vscode/
+.idea/
+*.iml
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Data & intermediate results (keep examples/ if desired)
+*.csv
+*.tsv
+*.tmp
+
+# Ignore generated figures
+*.png
+*.svg
+*.pdf
+
+# Allow example CSVs in examples/ dir
+!examples/**/*.csv
